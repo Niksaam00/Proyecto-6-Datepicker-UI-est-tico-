@@ -1,0 +1,123 @@
+* {
+    align-items: center;
+    margin:  auto;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #30343b;
+}
+header{
+    text-align: center;
+    font-style: italic;
+
+}
+header h1{
+    background-color: #333333;
+    border-radius: 15px;
+    color: white;
+    width: 350px;
+    margin-top: 25px;
+}
+
+.main {
+    padding: 35px;
+    margin: auto 35px;
+}
+
+.selectorFecha {
+    position: relative;
+    width: 145px;
+}
+
+.campoFecha {
+    display: flex;
+    width: 145px;
+    height: 25px;
+    border: 1px solid #555555;
+    background-color: white;
+}
+.campoFecha input {
+    width: 200px;
+    min-width: 0;
+    height: 100%;
+    padding: 0 8px;
+    border: none;
+    outline: none;
+    background-color: white;
+    font-family: inherit;
+    font-size: 11px;
+    color: #333333;
+}
+
+.campoFecha input::placeholder {
+    color: #333333;
+    opacity: 1;
+}
+
+.botonCalendario {
+    width: 25px;
+    height: 100%;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-left: 1px solid #555555;
+
+}
+
+.calendario {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 145px;
+    border: 1px solid #555555;
+    background-color: #ffffff;
+    z-index: 10;
+}
+.encabezadoCalendario {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid #777777;
+}
+
+.mes {
+    font-size: 10px;
+}
+
+.flecha {
+    font-size: 12px;
+    color: #111111;
+}
+
+.diasSemana {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    height: 20px;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid #777777;
+    font-size: 9px;
+}
+
+.diasMes {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.dia {
+    height: 21px;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+    font-size: 10px;
+    background-color: #ffffff;
+}
+.dia.vacio {
+    background-color: grey;
+}
